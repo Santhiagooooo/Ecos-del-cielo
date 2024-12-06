@@ -1,11 +1,31 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "PicoCelestial",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pico_celestial",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ecosdelcielo/item/PicoCelestialItem.java",
+          "src/main/resources/assets/ecos_del_cielo/models/item/pico_celestial.json"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:PicoCelestial"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.ecos_del_cielo.pico_celestial": "Guadaña Pájaro"
+    }
   },
   "foldersRoot": {
     "name": "~",
