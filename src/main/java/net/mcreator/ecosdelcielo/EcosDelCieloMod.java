@@ -17,8 +17,8 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.ecosdelcielo.init.EcosDelCieloModTabs;
 import net.mcreator.ecosdelcielo.init.EcosDelCieloModItems;
+import net.mcreator.ecosdelcielo.init.EcosDelCieloModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -40,9 +40,9 @@ public class EcosDelCieloMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
-		EcosDelCieloModItems.REGISTRY.register(bus);
+		EcosDelCieloModBlocks.REGISTRY.register(bus);
 
-		EcosDelCieloModTabs.REGISTRY.register(bus);
+		EcosDelCieloModItems.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

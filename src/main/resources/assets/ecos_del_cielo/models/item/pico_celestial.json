@@ -1,6 +1,0 @@
-{
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "ecos_del_cielo:item/guadanapajaro"
-  }
-}
