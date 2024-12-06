@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/azure_bluet",
+    "up": "minecraft:block/azure_bluet",
+    "north": "minecraft:block/azure_bluet",
+    "east": "minecraft:block/azure_bluet",
+    "south": "minecraft:block/azure_bluet",
+    "west": "minecraft:block/azure_bluet",
+    "particle": "minecraft:block/azure_bluet"
+  },
+  "render_type": "solid"
+}

@@ -15,6 +15,22 @@
           "src/main/resources/assets/ecos_del_cielo/models/item/semen.json"
         ]
       }
+    },
+    {
+      "name": "Cddd",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cddd",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ecos_del_cielo/loot_tables/blocks/cddd.json",
+          "src/main/resources/assets/ecos_del_cielo/models/block/cddd.json",
+          "src/main/resources/assets/ecos_del_cielo/blockstates/cddd.json",
+          "src/main/java/net/mcreator/ecosdelcielo/block/CdddBlock.java",
+          "src/main/resources/assets/ecos_del_cielo/models/item/cddd.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -23,7 +39,8 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "block.ecos_del_cielo.semen": "Semen"
+      "block.ecos_del_cielo.semen": "Semen",
+      "block.ecos_del_cielo.cddd": "Pilin"
     }
   },
   "foldersRoot": {

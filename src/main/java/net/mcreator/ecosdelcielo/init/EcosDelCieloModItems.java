@@ -17,6 +17,7 @@ import net.mcreator.ecosdelcielo.EcosDelCieloMod;
 public class EcosDelCieloModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, EcosDelCieloMod.MODID);
 	public static final RegistryObject<Item> SEMEN = block(EcosDelCieloModBlocks.SEMEN);
+	public static final RegistryObject<Item> CDDD = block(EcosDelCieloModBlocks.CDDD);
 
 	// Start of user code block custom items
 	// End of user code block custom items

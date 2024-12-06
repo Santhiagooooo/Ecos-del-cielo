@@ -24,6 +24,7 @@ public class EcosDelCieloModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 
 			tabData.accept(EcosDelCieloModBlocks.SEMEN.get().asItem());
+			tabData.accept(EcosDelCieloModBlocks.CDDD.get().asItem());
 
 		}
 	}
