@@ -15,15 +15,18 @@
     "modid": "ecos_del_cielo",
     "modName": "Ecos del cielo",
     "version": "1.0.0",
-    "author": "imcap, MCreator",
-    "websiteURL": "https://mcreator.net",
+    "author": "ImSantiago, BttingArcher, Martin777",
+    "websiteURL": "https://discord.gg/Fe9N6b27wy",
     "license": "Not specified",
     "serverSideOnly": false,
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
     "currentGenerator": "forge-1.20.1",
+    "credits": "Creado por los duenos de randomsafio - https://discord.gg/Fe9N6b27wy",
     "modElementsPackage": "net.mcreator.ecosdelcielo"
   },
   "mcreatorVersion": 202400342716

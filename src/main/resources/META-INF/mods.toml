@@ -6,9 +6,9 @@ license="Not specified"
 modId="ecos_del_cielo"
 version="1.0.0"
 displayName="Ecos del cielo"
-displayURL="https://mcreator.net"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
-authors="imcap, MCreator"
+displayURL="https://discord.gg/Fe9N6b27wy"
+credits="Creado por los duenos de randomsafio - https://discord.gg/Fe9N6b27wy"
+authors="ImSantiago, BttingArcher, Martin777"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
@@ -21,6 +21,12 @@ authors="imcap, MCreator"
     side="BOTH"
 
 
+[[dependencies.ecos_del_cielo]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 
 # Start of user code block dependencies configuration
