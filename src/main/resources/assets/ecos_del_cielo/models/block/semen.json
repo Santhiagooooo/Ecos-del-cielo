@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/calcite",
+    "up": "minecraft:block/calcite",
+    "north": "minecraft:block/calcite",
+    "east": "minecraft:block/calcite",
+    "south": "minecraft:block/calcite",
+    "west": "minecraft:block/calcite",
+    "particle": "minecraft:block/calcite"
+  },
+  "render_type": "solid"
+}

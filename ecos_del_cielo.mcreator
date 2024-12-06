@@ -1,11 +1,30 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Semen",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "semen",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ecos_del_cielo/models/block/semen.json",
+          "src/main/resources/data/ecos_del_cielo/loot_tables/blocks/semen.json",
+          "src/main/java/net/mcreator/ecosdelcielo/block/SemenBlock.java",
+          "src/main/resources/assets/ecos_del_cielo/blockstates/semen.json",
+          "src/main/resources/assets/ecos_del_cielo/models/item/semen.json"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "block.ecos_del_cielo.semen": "Semen"
+    }
   },
   "foldersRoot": {
     "name": "~",
