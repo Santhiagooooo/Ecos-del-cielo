@@ -1,18 +1,18 @@
 {
   "mod_elements": [
     {
-      "name": "Pitos",
+      "name": "UWU",
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pitos",
+      "registry_name": "uwu",
       "metadata": {
         "files": [
-          "src/main/resources/data/ecos_del_cielo/loot_tables/blocks/pitos.json",
-          "src/main/resources/assets/ecos_del_cielo/models/block/pitos.json",
-          "src/main/java/net/mcreator/ecosdelcielo/block/PitosBlock.java",
-          "src/main/resources/assets/ecos_del_cielo/blockstates/pitos.json",
-          "src/main/resources/assets/ecos_del_cielo/models/item/pitos.json"
+          "src/main/java/net/mcreator/ecosdelcielo/block/UWUBlock.java",
+          "src/main/resources/assets/ecos_del_cielo/blockstates/uwu.json",
+          "src/main/resources/assets/ecos_del_cielo/models/item/uwu.json",
+          "src/main/resources/assets/ecos_del_cielo/models/block/uwu.json",
+          "src/main/resources/data/ecos_del_cielo/loot_tables/blocks/uwu.json"
         ]
       }
     }
@@ -23,7 +23,7 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "block.ecos_del_cielo.pitos": "Pitos"
+      "block.ecos_del_cielo.uwu": "UWU"
     }
   },
   "foldersRoot": {

@@ -16,7 +16,7 @@ import net.mcreator.ecosdelcielo.EcosDelCieloMod;
 
 public class EcosDelCieloModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, EcosDelCieloMod.MODID);
-	public static final RegistryObject<Item> PITOS = block(EcosDelCieloModBlocks.PITOS);
+	public static final RegistryObject<Item> UWU = block(EcosDelCieloModBlocks.UWU);
 
 	// Start of user code block custom items
 	// End of user code block custom items

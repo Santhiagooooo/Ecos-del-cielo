@@ -1,6 +1,6 @@
 {
   "type": "minecraft:block",
-  "random_sequence": "ecos_del_cielo:blocks/pitos",
+  "random_sequence": "ecos_del_cielo:blocks/uwu",
   "pools": [
     {
       "rolls": 1.0,
@@ -12,7 +12,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "ecos_del_cielo:pitos"
+          "name": "ecos_del_cielo:uwu"
         }
       ]
     }
