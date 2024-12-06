@@ -31,6 +31,22 @@
           "src/main/resources/assets/ecos_del_cielo/models/item/cddd.json"
         ]
       }
+    },
+    {
+      "name": "UWU",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uwu",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ecos_del_cielo/blockstates/uwu.json",
+          "src/main/resources/assets/ecos_del_cielo/models/block/uwu.json",
+          "src/main/resources/data/ecos_del_cielo/loot_tables/blocks/uwu.json",
+          "src/main/resources/assets/ecos_del_cielo/models/item/uwu.json",
+          "src/main/java/net/mcreator/ecosdelcielo/block/UWUBlock.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -38,10 +54,7 @@
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
-    "en_us": {
-      "block.ecos_del_cielo.semen": "Semen",
-      "block.ecos_del_cielo.cddd": "Pilin"
-    }
+    "en_us": {}
   },
   "foldersRoot": {
     "name": "~",
