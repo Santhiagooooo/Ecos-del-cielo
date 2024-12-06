@@ -11,11 +11,13 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.ecosdelcielo.block.UWUBlock;
+import net.mcreator.ecosdelcielo.block.SemenBlock;
 import net.mcreator.ecosdelcielo.EcosDelCieloMod;
 
 public class EcosDelCieloModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, EcosDelCieloMod.MODID);
 	public static final RegistryObject<Block> UWU = REGISTRY.register("uwu", () -> new UWUBlock());
+	public static final RegistryObject<Block> SEMEN = REGISTRY.register("semen", () -> new SemenBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
