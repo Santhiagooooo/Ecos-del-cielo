@@ -1,64 +1,90 @@
 {
   "mod_elements": [
     {
-      "name": "Semen",
-      "type": "block",
+      "name": "GuadanaPajaroAlEntidadSerGolpeadaConLaHerramienta",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "semen",
+      "registry_name": "guadana_pajaro_al_entidad_ser_golpeada_con_la_herramienta",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ecos_del_cielo/models/block/semen.json",
-          "src/main/resources/data/ecos_del_cielo/loot_tables/blocks/semen.json",
-          "src/main/java/net/mcreator/ecosdelcielo/block/SemenBlock.java",
-          "src/main/resources/assets/ecos_del_cielo/blockstates/semen.json",
-          "src/main/resources/assets/ecos_del_cielo/models/item/semen.json"
+          "src/main/java/net/mcreator/ecosdelcielo/procedures/GuadanaPajaroAlEntidadSerGolpeadaConLaHerramientaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
-      }
+      },
+      "path": "~/GuadanaPajaro"
     },
     {
-      "name": "Cddd",
-      "type": "block",
+      "name": "GuadanaPajaroAlEstarEnLaMano",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cddd",
+      "registry_name": "guadana_pajaro_al_estar_en_la_mano",
       "metadata": {
         "files": [
-          "src/main/resources/data/ecos_del_cielo/loot_tables/blocks/cddd.json",
-          "src/main/resources/assets/ecos_del_cielo/models/block/cddd.json",
-          "src/main/resources/assets/ecos_del_cielo/blockstates/cddd.json",
-          "src/main/java/net/mcreator/ecosdelcielo/block/CdddBlock.java",
-          "src/main/resources/assets/ecos_del_cielo/models/item/cddd.json"
+          "src/main/java/net/mcreator/ecosdelcielo/procedures/GuadanaPajaroAlEstarEnLaManoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
-      }
+      },
+      "path": "~/GuadanaPajaro"
     },
     {
-      "name": "UWU",
-      "type": "block",
+      "name": "GuadanaPajaro",
+      "type": "tool",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "uwu",
+      "registry_name": "guadana_pajaro",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ecos_del_cielo/blockstates/uwu.json",
-          "src/main/resources/assets/ecos_del_cielo/models/block/uwu.json",
-          "src/main/resources/data/ecos_del_cielo/loot_tables/blocks/uwu.json",
-          "src/main/resources/assets/ecos_del_cielo/models/item/uwu.json",
-          "src/main/java/net/mcreator/ecosdelcielo/block/UWUBlock.java"
+          "src/main/java/net/mcreator/ecosdelcielo/item/GuadanaPajaroItem.java",
+          "src/main/resources/assets/ecos_del_cielo/models/item/guadana_pajaro.json"
         ]
+      },
+      "path": "~/GuadanaPajaro"
+    },
+    {
+      "name": "EcosDelCielo",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ecos_del_cielo",
+      "metadata": {
+        "files": []
       }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:GuadanaPajaro"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.ecos_del_cielo.guadana_pajaro": "Guadaña Pajaro ",
+      "item_group.ecos_del_cielo.ecos_del_cielo": "Ecos Del Cielo"
+    }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "GuadanaPajaro",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "ecos_del_cielo",

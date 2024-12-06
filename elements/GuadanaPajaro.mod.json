@@ -1,0 +1,48 @@
+{
+  "_fv": 69,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "guadanapajarob",
+    "customModelName": "guadanapajaro:default",
+    "blockingModelName": "Normal blocking",
+    "name": "Guadaña Pajaro ",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:EcosDelCielo"
+      }
+    ],
+    "efficiency": 4.0,
+    "attackSpeed": 2.0,
+    "enchantability": 22,
+    "damageVsEntity": 8.0,
+    "usageCount": 250,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "Items.BONE"
+      },
+      {
+        "value": "Blocks.BONE_BLOCK"
+      }
+    ],
+    "immuneToFire": true,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "GuadanaPajaroAlEntidadSerGolpeadaConLaHerramienta"
+    },
+    "onItemInUseTick": {
+      "name": "GuadanaPajaroAlEstarEnLaMano"
+    }
+  }
+}

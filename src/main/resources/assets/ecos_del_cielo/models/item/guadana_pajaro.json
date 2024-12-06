@@ -1,0 +1,7 @@
+{
+  "parent": "ecos_del_cielo:custom/guadanapajaro",
+  "textures": {
+    "0": "ecos_del_cielo:block/guadanapajaro",
+    "particle": "ecos_del_cielo:item/guadanapajarob"
+  }
+}
