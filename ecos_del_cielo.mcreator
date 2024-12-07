@@ -148,6 +148,20 @@
         ]
       },
       "path": "~/HachaDeLaDesolacion"
+    },
+    {
+      "name": "CuchillaDelHeraldoOscuro",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cuchilla_del_heraldo_oscuro",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ecos_del_cielo/models/item/cuchilla_del_heraldo_oscuro.json",
+          "src/main/java/net/mcreator/ecosdelcielo/item/CuchillaDelHeraldoOscuroItem.java"
+        ]
+      },
+      "path": "~/CuchillaDelHeraldoOscuro"
     }
   ],
   "variable_elements": [],
@@ -157,6 +171,7 @@
       "~CUSTOM:HachaDeLaDesolacion"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:CuchillaDelHeraldoOscuro",
       "~CUSTOM:GuadanaPajaro"
     ]
   },
@@ -165,7 +180,8 @@
     "en_us": {
       "item.ecos_del_cielo.guadana_pajaro": "Guadaña Pajaro ",
       "item_group.ecos_del_cielo.ecos_del_cielo": "Ecos Del Cielo",
-      "item.ecos_del_cielo.hacha_de_la_desolacion": "Hacha De La Desolacion"
+      "item.ecos_del_cielo.hacha_de_la_desolacion": "Hacha De La Desolacion",
+      "item.ecos_del_cielo.cuchilla_del_heraldo_oscuro": "Cuchilla Del Heraldo Oscuro"
     }
   },
   "foldersRoot": {
@@ -181,6 +197,10 @@
       },
       {
         "name": "EspadaMalditaDeLaPerdida",
+        "children": []
+      },
+      {
+        "name": "CuchillaDelHeraldoOscuro",
         "children": []
       }
     ]

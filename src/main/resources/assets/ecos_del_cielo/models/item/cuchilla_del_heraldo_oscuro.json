@@ -1,0 +1,7 @@
+{
+  "parent": "ecos_del_cielo:custom/cuchilladelheraldooscuro",
+  "textures": {
+    "2": "ecos_del_cielo:block/cuchilladelheraldo2",
+    "particle": "ecos_del_cielo:item/cuchilla_del_heraldo_oscuro"
+  }
+}

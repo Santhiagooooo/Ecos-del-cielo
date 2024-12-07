@@ -20,6 +20,7 @@ public class EcosDelCieloModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ecos_del_cielo.ecos_del_cielo")).icon(() -> new ItemStack(EcosDelCieloModItems.GUADANA_PAJARO.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(EcosDelCieloModItems.GUADANA_PAJARO.get());
 				tabData.accept(EcosDelCieloModItems.HACHA_DE_LA_DESOLACION.get());
+				tabData.accept(EcosDelCieloModItems.CUCHILLA_DEL_HERALDO_OSCURO.get());
 			})
 
 					.build());
