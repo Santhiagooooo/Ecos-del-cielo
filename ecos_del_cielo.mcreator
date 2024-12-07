@@ -148,38 +148,6 @@
         ]
       },
       "path": "~/HachaDeLaDesolacion"
-    },
-    {
-      "name": "UWU",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "uwu",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/ecos_del_cielo/blockstates/uwu.json",
-          "src/main/resources/assets/ecos_del_cielo/models/block/uwu.json",
-          "src/main/resources/data/ecos_del_cielo/loot_tables/blocks/uwu.json",
-          "src/main/resources/assets/ecos_del_cielo/models/item/uwu.json",
-          "src/main/java/net/mcreator/ecosdelcielo/block/UWUBlock.java"
-        ]
-      }
-    },
-    {
-      "name": "Semen",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "semen",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/ecos_del_cielo/models/block/semen.json",
-          "src/main/resources/data/ecos_del_cielo/loot_tables/blocks/semen.json",
-          "src/main/java/net/mcreator/ecosdelcielo/block/SemenBlock.java",
-          "src/main/resources/assets/ecos_del_cielo/blockstates/semen.json",
-          "src/main/resources/assets/ecos_del_cielo/models/item/semen.json"
-        ]
-      }
     }
   ],
   "variable_elements": [],
@@ -209,6 +177,10 @@
       },
       {
         "name": "HachaDeLaDesolacion",
+        "children": []
+      },
+      {
+        "name": "EspadaMalditaDeLaPerdida",
         "children": []
       }
     ]
