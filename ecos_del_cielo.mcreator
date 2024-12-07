@@ -61,11 +61,101 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "HachaDeLaDesolacionAlPresionarClickDerechoEnElBloque",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hacha_de_la_desolacion_al_presionar_click_derecho_en_el_bloque",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ecosdelcielo/procedures/HachaDeLaDesolacionAlPresionarClickDerechoEnElBloqueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/HachaDeLaDesolacion"
+    },
+    {
+      "name": "HachaDeLaDesolacionAlEntidadSerGolpeadaConLaHerramienta",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hacha_de_la_desolacion_al_entidad_ser_golpeada_con_la_herramienta",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ecosdelcielo/procedures/HachaDeLaDesolacionAlEntidadSerGolpeadaConLaHerramientaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HachaDeLaDesolacion"
+    },
+    {
+      "name": "HachaDeLaDesolacionAlEstarEnLaMano",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hacha_de_la_desolacion_al_estar_en_la_mano",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ecosdelcielo/procedures/HachaDeLaDesolacionAlEstarEnLaManoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/HachaDeLaDesolacion"
+    },
+    {
+      "name": "HachaDeLaDesolacion",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hacha_de_la_desolacion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ecosdelcielo/item/HachaDeLaDesolacionItem.java",
+          "src/main/resources/assets/ecos_del_cielo/models/item/hacha_de_la_desolacion.json"
+        ]
+      },
+      "path": "~/HachaDeLaDesolacion"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:HachaDeLaDesolacion"
+    ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:GuadanaPajaro"
     ]
@@ -74,7 +164,8 @@
   "language_map": {
     "en_us": {
       "item.ecos_del_cielo.guadana_pajaro": "Guadaña Pajaro ",
-      "item_group.ecos_del_cielo.ecos_del_cielo": "Ecos Del Cielo"
+      "item_group.ecos_del_cielo.ecos_del_cielo": "Ecos Del Cielo",
+      "item.ecos_del_cielo.hacha_de_la_desolacion": "Hacha De La Desolacion"
     }
   },
   "foldersRoot": {
@@ -82,6 +173,10 @@
     "children": [
       {
         "name": "GuadanaPajaro",
+        "children": []
+      },
+      {
+        "name": "HachaDeLaDesolacion",
         "children": []
       }
     ]

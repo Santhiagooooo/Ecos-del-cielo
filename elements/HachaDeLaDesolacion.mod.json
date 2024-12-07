@@ -1,0 +1,48 @@
+{
+  "_fv": 69,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Axe",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "hacha_de_la_desolacion",
+    "customModelName": "hacha_de_la_desolacion:default",
+    "blockingModelName": "Normal blocking",
+    "name": "Hacha De La Desolacion",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:EcosDelCielo"
+      }
+    ],
+    "efficiency": 12.0,
+    "attackSpeed": 0.7,
+    "enchantability": 22,
+    "damageVsEntity": 14.0,
+    "usageCount": 250,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "Items.NETHERITE_INGOT"
+      }
+    ],
+    "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedOnBlock": {
+      "name": "HachaDeLaDesolacionAlPresionarClickDerechoEnElBloque"
+    },
+    "onEntityHitWith": {
+      "name": "HachaDeLaDesolacionAlEntidadSerGolpeadaConLaHerramienta"
+    },
+    "onItemInUseTick": {
+      "name": "HachaDeLaDesolacionAlEstarEnLaMano"
+    }
+  }
+}
