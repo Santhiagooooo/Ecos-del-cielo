@@ -54,7 +54,10 @@
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "block.ecos_del_cielo.semen": "Semen",
+      "block.ecos_del_cielo.uwu": "UWU"
+    }
   },
   "foldersRoot": {
     "name": "~",
