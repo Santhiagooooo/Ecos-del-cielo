@@ -1,22 +1,6 @@
 
 package net.mcreator.ecosdelcielo.item;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.context.UseOnContext;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.AxeItem;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.InteractionResult;
-
-import net.mcreator.ecosdelcielo.procedures.HachaDeLaDesolacionAlPresionarClickDerechoEnElBloqueProcedure;
-import net.mcreator.ecosdelcielo.procedures.HachaDeLaDesolacionAlEstarEnLaManoProcedure;
-import net.mcreator.ecosdelcielo.procedures.HachaDeLaDesolacionAlEntidadSerGolpeadaConLaHerramientaProcedure;
-
 public class HachaDeLaDesolacionItem extends AxeItem {
 	public HachaDeLaDesolacionItem() {
 		super(new Tier() {
@@ -49,7 +33,7 @@ public class HachaDeLaDesolacionItem extends AxeItem {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		HachaDeLaDesolacionAlEntidadSerGolpeadaConLaHerramientaProcedure.execute(entity);
+		HachaDeLaDesolacionAlEntidadSerGolpeadaConLaHerramientaProcedure.execute();
 		return retval;
 	}
 
@@ -64,6 +48,6 @@ public class HachaDeLaDesolacionItem extends AxeItem {
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
 		if (selected)
-			HachaDeLaDesolacionAlEstarEnLaManoProcedure.execute(entity);
+			HachaDeLaDesolacionAlEstarEnLaManoProcedure.execute();
 	}
 }

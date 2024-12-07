@@ -1,20 +1,6 @@
 
 package net.mcreator.ecosdelcielo.item;
 
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.ecosdelcielo.procedures.GuadanaPajaroAlEstarEnLaManoProcedure;
-import net.mcreator.ecosdelcielo.procedures.GuadanaPajaroAlEntidadSerGolpeadaConLaHerramientaProcedure;
-
 public class GuadanaPajaroItem extends SwordItem {
 	public GuadanaPajaroItem() {
 		super(new Tier() {
