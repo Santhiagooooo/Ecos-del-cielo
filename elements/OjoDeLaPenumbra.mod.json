@@ -1,0 +1,38 @@
+{
+  "_fv": 69,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Shield",
+    "renderType": 1,
+    "blockingRenderType": 1,
+    "texture": "fuysdakjfg",
+    "customModelName": "ojo_de_la_penumbra:default",
+    "blockingModelName": "ojo_de_la_penumbra:default",
+    "name": "Ojo De La Penumbra",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "TOOLS"
+      }
+    ],
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 16,
+    "damageVsEntity": 4.0,
+    "usageCount": 600,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": true,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "OjoDeLaPenumbraCuandoSeHagaClicDerecho"
+    }
+  }
+}

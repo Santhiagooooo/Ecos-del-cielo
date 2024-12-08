@@ -70,6 +70,9 @@ public class EcosDelCieloModVariables {
 				clone.PunchDetectorCuchillaDelHeraldoOscuro = original.PunchDetectorCuchillaDelHeraldoOscuro;
 				clone.ExtraDamageCuchillaDelHeraldoOscuro = original.ExtraDamageCuchillaDelHeraldoOscuro;
 				clone.LastPunchTickCounter = original.LastPunchTickCounter;
+				clone.MiradaIntimidante = original.MiradaIntimidante;
+				clone.DefensaRunicaDuracion = original.DefensaRunicaDuracion;
+				clone.DefensaRunicaCooldown = original.DefensaRunicaCooldown;
 			}
 		}
 	}
@@ -108,6 +111,9 @@ public class EcosDelCieloModVariables {
 		public boolean PunchDetectorCuchillaDelHeraldoOscuro = false;
 		public double ExtraDamageCuchillaDelHeraldoOscuro = 0;
 		public double LastPunchTickCounter = 0;
+		public boolean MiradaIntimidante = false;
+		public double DefensaRunicaDuracion = 0;
+		public double DefensaRunicaCooldown = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -119,6 +125,9 @@ public class EcosDelCieloModVariables {
 			nbt.putBoolean("PunchDetectorCuchillaDelHeraldoOscuro", PunchDetectorCuchillaDelHeraldoOscuro);
 			nbt.putDouble("ExtraDamageCuchillaDelHeraldoOscuro", ExtraDamageCuchillaDelHeraldoOscuro);
 			nbt.putDouble("LastPunchTickCounter", LastPunchTickCounter);
+			nbt.putBoolean("MiradaIntimidante", MiradaIntimidante);
+			nbt.putDouble("DefensaRunicaDuracion", DefensaRunicaDuracion);
+			nbt.putDouble("DefensaRunicaCooldown", DefensaRunicaCooldown);
 			return nbt;
 		}
 
@@ -127,6 +136,9 @@ public class EcosDelCieloModVariables {
 			PunchDetectorCuchillaDelHeraldoOscuro = nbt.getBoolean("PunchDetectorCuchillaDelHeraldoOscuro");
 			ExtraDamageCuchillaDelHeraldoOscuro = nbt.getDouble("ExtraDamageCuchillaDelHeraldoOscuro");
 			LastPunchTickCounter = nbt.getDouble("LastPunchTickCounter");
+			MiradaIntimidante = nbt.getBoolean("MiradaIntimidante");
+			DefensaRunicaDuracion = nbt.getDouble("DefensaRunicaDuracion");
+			DefensaRunicaCooldown = nbt.getDouble("DefensaRunicaCooldown");
 		}
 	}
 
@@ -154,6 +166,9 @@ public class EcosDelCieloModVariables {
 					variables.PunchDetectorCuchillaDelHeraldoOscuro = message.data.PunchDetectorCuchillaDelHeraldoOscuro;
 					variables.ExtraDamageCuchillaDelHeraldoOscuro = message.data.ExtraDamageCuchillaDelHeraldoOscuro;
 					variables.LastPunchTickCounter = message.data.LastPunchTickCounter;
+					variables.MiradaIntimidante = message.data.MiradaIntimidante;
+					variables.DefensaRunicaDuracion = message.data.DefensaRunicaDuracion;
+					variables.DefensaRunicaCooldown = message.data.DefensaRunicaCooldown;
 				}
 			});
 			context.setPacketHandled(true);

@@ -227,6 +227,75 @@
         ]
       },
       "path": "~/CuchillaDelHeraldoOscuro"
+    },
+    {
+      "name": "OjoDeLaPenumbra",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ojo_de_la_penumbra",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ecos_del_cielo/models/item/ojo_de_la_penumbra_0.json",
+          "src/main/java/net/mcreator/ecosdelcielo/item/OjoDeLaPenumbraItem.java",
+          "src/main/resources/assets/ecos_del_cielo/models/item/ojo_de_la_penumbra.json"
+        ]
+      },
+      "path": "~/OjoDeLaPenumbra"
+    },
+    {
+      "name": "OjoDeLaPenumbraCuandoSeHagaClicDerecho",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ojo_de_la_penumbra_cuando_se_haga_clic_derecho",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ecosdelcielo/procedures/OjoDeLaPenumbraCuandoSeHagaClicDerechoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/OjoDeLaPenumbra"
+    },
+    {
+      "name": "MiradaIntimidante",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mirada_intimidante",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ecosdelcielo/procedures/MiradaIntimidanteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/OjoDeLaPenumbra"
     }
   ],
   "variable_elements": [
@@ -244,6 +313,24 @@
     },
     {
       "name": "LastPunchTickCounter",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "MiradaIntimidante",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "DefensaRunicaDuracion",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "DefensaRunicaCooldown",
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
@@ -265,7 +352,8 @@
       "item.ecos_del_cielo.guadana_pajaro": "Guadaña Pajaro ",
       "item_group.ecos_del_cielo.ecos_del_cielo": "Ecos Del Cielo",
       "item.ecos_del_cielo.hacha_de_la_desolacion": "Hacha De La Desolacion",
-      "item.ecos_del_cielo.cuchilla_del_heraldo_oscuro": "Cuchilla Del Heraldo Oscuro"
+      "item.ecos_del_cielo.cuchilla_del_heraldo_oscuro": "Cuchilla Del Heraldo Oscuro",
+      "item.ecos_del_cielo.ojo_de_la_penumbra": "Ojo De La Penumbra"
     }
   },
   "foldersRoot": {
@@ -285,6 +373,10 @@
       },
       {
         "name": "CuchillaDelHeraldoOscuro",
+        "children": []
+      },
+      {
+        "name": "OjoDeLaPenumbra",
         "children": []
       }
     ]
