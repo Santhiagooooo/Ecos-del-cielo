@@ -12,11 +12,11 @@ public class PesadezMalditaProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == EcosDelCieloModItems.CUCHILLA_DEL_HERALDO_OSCURO.get()) {
-			entity.getPersistentData().putDouble("OriginalSpeed",
-					(entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity2.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0));
-			if (entity instanceof LivingEntity _livingEntity5 && _livingEntity5.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED))
-				_livingEntity5.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue((entity.getPersistentData().getDouble("OriginalSpeed") * 0.9));
+			if (entity instanceof LivingEntity _livingEntity3 && _livingEntity3.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED))
+				_livingEntity3.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue((entity.getPersistentData().getDouble("OriginalSpeed") * 0.9));
 		} else {
+			entity.getPersistentData().putDouble("OriginalSpeed",
+					(entity instanceof LivingEntity _livingEntity4 && _livingEntity4.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity4.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0));
 			if (entity instanceof LivingEntity _livingEntity7 && _livingEntity7.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED))
 				_livingEntity7.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue((entity.getPersistentData().getDouble("OriginalSpeed")));
 		}
