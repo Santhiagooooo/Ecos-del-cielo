@@ -58,6 +58,15 @@ public class ComboDestructorProcedure {
 			}
 			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.PLAYER_ATTACK), (damagesource.getEntity())),
 					(float) ((damagesource.getEntity()).getCapability(EcosDelCieloModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EcosDelCieloModVariables.PlayerVariables())).ExtraDamageCuchillaDelHeraldoOscuro);
+			if (((damagesource.getEntity()).getCapability(EcosDelCieloModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new EcosDelCieloModVariables.PlayerVariables())).ExtraDamageCuchillaDelHeraldoOscuro >= 10) {
+				{
+					double _setval = 10;
+					(damagesource.getEntity()).getCapability(EcosDelCieloModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.ExtraDamageCuchillaDelHeraldoOscuro = _setval;
+						capability.syncPlayerVariables((damagesource.getEntity()));
+					});
+				}
+			}
 		}
 	}
 }
