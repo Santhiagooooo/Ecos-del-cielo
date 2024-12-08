@@ -162,9 +162,35 @@
         ]
       },
       "path": "~/CuchillaDelHeraldoOscuro"
+    },
+    {
+      "name": "PesadezMaldita",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pesadez_maldita",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ecosdelcielo/procedures/PesadezMalditaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CuchillaDelHeraldoOscuro"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "PunchDetectorCuchillaDelHeraldoOscuro",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    }
+  ],
   "sound_elements": [],
   "tag_elements": {
     "ITEMS:minecraft:axes": [
