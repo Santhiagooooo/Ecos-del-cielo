@@ -181,6 +181,48 @@
         ]
       },
       "path": "~/CuchillaDelHeraldoOscuro"
+    },
+    {
+      "name": "ComboDestructor",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "combo_destructor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ecosdelcielo/procedures/ComboDestructorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          }
+        ]
+      },
+      "path": "~/CuchillaDelHeraldoOscuro"
+    },
+    {
+      "name": "ComboDestructor2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "combo_destructor_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ecosdelcielo/procedures/ComboDestructor2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CuchillaDelHeraldoOscuro"
     }
   ],
   "variable_elements": [
@@ -189,6 +231,18 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
+    },
+    {
+      "name": "ExtraDamageCuchillaDelHeraldoOscuro",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "LastPunchTickCounter",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [],

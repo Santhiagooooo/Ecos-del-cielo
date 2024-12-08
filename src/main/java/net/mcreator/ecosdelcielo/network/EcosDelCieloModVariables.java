@@ -68,6 +68,8 @@ public class EcosDelCieloModVariables {
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			if (!event.isWasDeath()) {
 				clone.PunchDetectorCuchillaDelHeraldoOscuro = original.PunchDetectorCuchillaDelHeraldoOscuro;
+				clone.ExtraDamageCuchillaDelHeraldoOscuro = original.ExtraDamageCuchillaDelHeraldoOscuro;
+				clone.LastPunchTickCounter = original.LastPunchTickCounter;
 			}
 		}
 	}
@@ -104,6 +106,8 @@ public class EcosDelCieloModVariables {
 
 	public static class PlayerVariables {
 		public boolean PunchDetectorCuchillaDelHeraldoOscuro = false;
+		public double ExtraDamageCuchillaDelHeraldoOscuro = 0;
+		public double LastPunchTickCounter = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -113,12 +117,16 @@ public class EcosDelCieloModVariables {
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putBoolean("PunchDetectorCuchillaDelHeraldoOscuro", PunchDetectorCuchillaDelHeraldoOscuro);
+			nbt.putDouble("ExtraDamageCuchillaDelHeraldoOscuro", ExtraDamageCuchillaDelHeraldoOscuro);
+			nbt.putDouble("LastPunchTickCounter", LastPunchTickCounter);
 			return nbt;
 		}
 
 		public void readNBT(Tag tag) {
 			CompoundTag nbt = (CompoundTag) tag;
 			PunchDetectorCuchillaDelHeraldoOscuro = nbt.getBoolean("PunchDetectorCuchillaDelHeraldoOscuro");
+			ExtraDamageCuchillaDelHeraldoOscuro = nbt.getDouble("ExtraDamageCuchillaDelHeraldoOscuro");
+			LastPunchTickCounter = nbt.getDouble("LastPunchTickCounter");
 		}
 	}
 
@@ -144,6 +152,8 @@ public class EcosDelCieloModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.PunchDetectorCuchillaDelHeraldoOscuro = message.data.PunchDetectorCuchillaDelHeraldoOscuro;
+					variables.ExtraDamageCuchillaDelHeraldoOscuro = message.data.ExtraDamageCuchillaDelHeraldoOscuro;
+					variables.LastPunchTickCounter = message.data.LastPunchTickCounter;
 				}
 			});
 			context.setPacketHandled(true);
