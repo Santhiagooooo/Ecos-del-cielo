@@ -232,9 +232,9 @@
       "registry_name": "ojo_de_la_penumbra",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ecos_del_cielo/models/item/ojo_de_la_penumbra_0.json",
           "src/main/java/net/mcreator/ecosdelcielo/item/OjoDeLaPenumbraItem.java",
-          "src/main/resources/assets/ecos_del_cielo/models/item/ojo_de_la_penumbra.json"
+          "src/main/resources/assets/ecos_del_cielo/models/item/ojo_de_la_penumbra.json",
+          "src/main/resources/assets/ecos_del_cielo/models/item/ojo_de_la_penumbra_0.json"
         ]
       },
       "path": "~/OjoDeLaPenumbra"

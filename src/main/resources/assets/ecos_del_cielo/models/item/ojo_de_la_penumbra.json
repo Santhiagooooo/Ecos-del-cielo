@@ -1,8 +1,8 @@
 {
   "parent": "ecos_del_cielo:custom/ojo_de_la_penumbra",
   "textures": {
-    "missing": "ecos_del_cielo:block/",
-    "particle": "ecos_del_cielo:item/fuysdakjfg"
+    "1": "ecos_del_cielo:block/cuchilladelheraldo2",
+    "particle": "ecos_del_cielo:item/ojo_de_la_penumbra_final_2"
   },
   "overrides": [
     {
