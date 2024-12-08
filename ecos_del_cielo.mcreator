@@ -194,16 +194,12 @@
         ],
         "dependencies": [
           {
-            "name": "damagesource",
-            "type": "damagesource"
-          },
-          {
             "name": "entity",
             "type": "entity"
           },
           {
-            "name": "world",
-            "type": "world"
+            "name": "sourceentity",
+            "type": "entity"
           }
         ]
       },
@@ -292,6 +288,48 @@
           {
             "name": "world",
             "type": "world"
+          }
+        ]
+      },
+      "path": "~/OjoDeLaPenumbra"
+    },
+    {
+      "name": "OjoDeLaPenumbraAlEstarEnLaMano",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ojo_de_la_penumbra_al_estar_en_la_mano",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ecosdelcielo/procedures/OjoDeLaPenumbraAlEstarEnLaManoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/OjoDeLaPenumbra"
+    },
+    {
+      "name": "DefensaRunica",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "defensa_runica",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ecosdelcielo/procedures/DefensaRunicaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
