@@ -32,6 +32,6 @@ public class CuchillaDelHeraldoOscuroItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of();
 			}
-		}, 3, -2.8f, new Item.Properties().fireResistant());
+		}, 3, -3f, new Item.Properties().fireResistant());
 	}
 }
