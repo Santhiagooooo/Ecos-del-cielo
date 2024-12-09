@@ -219,41 +219,6 @@
       "path": "~/CuchillaDelHeraldoOscuro"
     },
     {
-      "name": "MiradaIntimidante",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mirada_intimidante",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ecosdelcielo/procedures/MiradaIntimidanteProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/OjoDeLaPenumbra"
-    },
-    {
       "name": "EspadaMalditaDeLaPerdida",
       "type": "tool",
       "compiles": true,
