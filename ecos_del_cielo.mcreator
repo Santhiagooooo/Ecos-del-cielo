@@ -161,9 +161,9 @@
       "registry_name": "ojo_de_la_penumbra",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ecos_del_cielo/models/item/ojo_de_la_penumbra.json",
+          "src/main/resources/assets/ecos_del_cielo/models/item/ojo_de_la_penumbra_0.json",
           "src/main/java/net/mcreator/ecosdelcielo/item/OjoDeLaPenumbraItem.java",
-          "src/main/resources/assets/ecos_del_cielo/models/item/ojo_de_la_penumbra_0.json"
+          "src/main/resources/assets/ecos_del_cielo/models/item/ojo_de_la_penumbra.json"
         ]
       },
       "path": "~/OjoDeLaPenumbra"
@@ -259,8 +259,8 @@
       "registry_name": "cuchilla_del_heraldo_oscuro",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ecosdelcielo/item/CuchillaDelHeraldoOscuroItem.java",
-          "src/main/resources/assets/ecos_del_cielo/models/item/cuchilla_del_heraldo_oscuro.json"
+          "src/main/resources/assets/ecos_del_cielo/models/item/cuchilla_del_heraldo_oscuro.json",
+          "src/main/java/net/mcreator/ecosdelcielo/item/CuchillaDelHeraldoOscuroItem.java"
         ]
       },
       "path": "~/CuchillaDelHeraldoOscuro"
@@ -294,38 +294,40 @@
         "files": [
           "src/main/java/net/mcreator/ecosdelcielo/procedures/ComboDestructor2Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/CuchillaDelHeraldoOscuro"
     },
     {
-      "name": "OjoDeLaPenumbraCuandoSeHagaClicDerecho",
+      "name": "DefensaRunicaTerminar",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ojo_de_la_penumbra_cuando_se_haga_clic_derecho",
+      "registry_name": "defensa_runica_terminar",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ecosdelcielo/procedures/OjoDeLaPenumbraCuandoSeHagaClicDerechoProcedure.java"
+          "src/main/java/net/mcreator/ecosdelcielo/procedures/DefensaRunicaTerminarProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/OjoDeLaPenumbra"
     }
   ],
   "variable_elements": [
-    {
-      "name": "DefensaRunicaDuracion",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
-      "name": "DefensaRunicaCooldown",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
     {
       "name": "PunchDetectorCuchillaDelHeraldoOscuro",
       "type": "logic",
@@ -349,6 +351,12 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "DefensaRunica",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
     }
   ],
   "sound_elements": [],

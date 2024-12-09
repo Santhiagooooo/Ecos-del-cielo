@@ -67,12 +67,11 @@ public class EcosDelCieloModVariables {
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			if (!event.isWasDeath()) {
-				clone.DefensaRunicaDuracion = original.DefensaRunicaDuracion;
-				clone.DefensaRunicaCooldown = original.DefensaRunicaCooldown;
 				clone.PunchDetectorCuchillaDelHeraldoOscuro = original.PunchDetectorCuchillaDelHeraldoOscuro;
 				clone.MiradaIntimidante = original.MiradaIntimidante;
 				clone.ExtraDamageCuchillaDelHeraldoOscuro = original.ExtraDamageCuchillaDelHeraldoOscuro;
 				clone.LastPunchTickCounter = original.LastPunchTickCounter;
+				clone.DefensaRunica = original.DefensaRunica;
 			}
 		}
 	}
@@ -108,12 +107,11 @@ public class EcosDelCieloModVariables {
 	}
 
 	public static class PlayerVariables {
-		public double DefensaRunicaDuracion = 0;
-		public double DefensaRunicaCooldown = 0;
 		public boolean PunchDetectorCuchillaDelHeraldoOscuro = false;
 		public boolean MiradaIntimidante = false;
 		public double ExtraDamageCuchillaDelHeraldoOscuro = 0;
 		public double LastPunchTickCounter = 0;
+		public boolean DefensaRunica = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -122,23 +120,21 @@ public class EcosDelCieloModVariables {
 
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
-			nbt.putDouble("DefensaRunicaDuracion", DefensaRunicaDuracion);
-			nbt.putDouble("DefensaRunicaCooldown", DefensaRunicaCooldown);
 			nbt.putBoolean("PunchDetectorCuchillaDelHeraldoOscuro", PunchDetectorCuchillaDelHeraldoOscuro);
 			nbt.putBoolean("MiradaIntimidante", MiradaIntimidante);
 			nbt.putDouble("ExtraDamageCuchillaDelHeraldoOscuro", ExtraDamageCuchillaDelHeraldoOscuro);
 			nbt.putDouble("LastPunchTickCounter", LastPunchTickCounter);
+			nbt.putBoolean("DefensaRunica", DefensaRunica);
 			return nbt;
 		}
 
 		public void readNBT(Tag tag) {
 			CompoundTag nbt = (CompoundTag) tag;
-			DefensaRunicaDuracion = nbt.getDouble("DefensaRunicaDuracion");
-			DefensaRunicaCooldown = nbt.getDouble("DefensaRunicaCooldown");
 			PunchDetectorCuchillaDelHeraldoOscuro = nbt.getBoolean("PunchDetectorCuchillaDelHeraldoOscuro");
 			MiradaIntimidante = nbt.getBoolean("MiradaIntimidante");
 			ExtraDamageCuchillaDelHeraldoOscuro = nbt.getDouble("ExtraDamageCuchillaDelHeraldoOscuro");
 			LastPunchTickCounter = nbt.getDouble("LastPunchTickCounter");
+			DefensaRunica = nbt.getBoolean("DefensaRunica");
 		}
 	}
 
@@ -163,12 +159,11 @@ public class EcosDelCieloModVariables {
 			context.enqueueWork(() -> {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
-					variables.DefensaRunicaDuracion = message.data.DefensaRunicaDuracion;
-					variables.DefensaRunicaCooldown = message.data.DefensaRunicaCooldown;
 					variables.PunchDetectorCuchillaDelHeraldoOscuro = message.data.PunchDetectorCuchillaDelHeraldoOscuro;
 					variables.MiradaIntimidante = message.data.MiradaIntimidante;
 					variables.ExtraDamageCuchillaDelHeraldoOscuro = message.data.ExtraDamageCuchillaDelHeraldoOscuro;
 					variables.LastPunchTickCounter = message.data.LastPunchTickCounter;
+					variables.DefensaRunica = message.data.DefensaRunica;
 				}
 			});
 			context.setPacketHandled(true);
