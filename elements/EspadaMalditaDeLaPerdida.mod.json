@@ -10,7 +10,11 @@
     "blockingModelName": "Normal blocking",
     "name": "Espada Maldita De La Perdida",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "Efecto especial:    ",
+        " •    Drenado de vida: Recupera 20% del daño infligido al enemigo.",
+        "   •    Maldición de desgaste: Si no se usa para atacar durante 30 segundos, el jugador pierde 1 punto de salud cada 10 segundos hasta que ataque de nuevo."
+      ]
     },
     "creativeTabs": [
       {
