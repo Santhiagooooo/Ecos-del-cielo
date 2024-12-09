@@ -65,7 +65,7 @@
     {
       "name": "DefensaRunica",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "defensa_runica",
       "metadata": {
@@ -108,6 +108,10 @@
           "src/main/java/net/mcreator/ecosdelcielo/procedures/HachaDeLaDesolacionAlPresionarClickDerechoEnElBloqueProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "itemstack",
             "type": "itemstack"
@@ -183,7 +187,7 @@
     {
       "name": "OjoDeLaPenumbraAlEstarEnLaMano",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "ojo_de_la_penumbra_al_estar_en_la_mano",
       "metadata": {
@@ -206,7 +210,7 @@
     {
       "name": "ComboDestructor",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "combo_destructor",
       "metadata": {
@@ -299,7 +303,7 @@
     {
       "name": "ComboDestructor2",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "combo_destructor_2",
       "metadata": {
