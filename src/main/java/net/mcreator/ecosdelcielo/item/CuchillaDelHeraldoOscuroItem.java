@@ -18,7 +18,7 @@ public class CuchillaDelHeraldoOscuroItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 8f;
+				return 4f;
 			}
 
 			public int getLevel() {
