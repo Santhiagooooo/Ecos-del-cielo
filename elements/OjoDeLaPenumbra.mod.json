@@ -10,7 +10,14 @@
     "blockingModelName": "ojo_de_la_penumbra:default",
     "name": "Ojo De La Penumbra",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "Habilidades:",
+        "Mirada Intimidante: Cuando se usa para bloquear, hay un 30% de probabilidad de aplicar un efecto",
+        "de náusea a los enemigos cercanos durante 10 segundos (pasiva)",
+        "",
+        "Defensa Rúnica: Absorbe el daño mágico, devolviendo el 50% del daño recibido al atacante.",
+        "(Esta habilidad tiene un couldown de 60 segundos y hace que el jugador brille para alertar a los demás, la habilidad dura 10 segundos.)"
+      ]
     },
     "creativeTabs": [
       {

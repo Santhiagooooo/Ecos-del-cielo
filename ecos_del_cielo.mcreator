@@ -65,7 +65,7 @@
     {
       "name": "DefensaRunica",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "defensa_runica",
       "metadata": {
@@ -173,9 +173,9 @@
       "registry_name": "ojo_de_la_penumbra",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ecos_del_cielo/models/item/ojo_de_la_penumbra_0.json",
           "src/main/java/net/mcreator/ecosdelcielo/item/OjoDeLaPenumbraItem.java",
-          "src/main/resources/assets/ecos_del_cielo/models/item/ojo_de_la_penumbra.json"
+          "src/main/resources/assets/ecos_del_cielo/models/item/ojo_de_la_penumbra.json",
+          "src/main/resources/assets/ecos_del_cielo/models/item/ojo_de_la_penumbra_0.json"
         ]
       },
       "path": "~/OjoDeLaPenumbra"
@@ -183,7 +183,7 @@
     {
       "name": "OjoDeLaPenumbraAlEstarEnLaMano",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "ojo_de_la_penumbra_al_estar_en_la_mano",
       "metadata": {
@@ -206,7 +206,7 @@
     {
       "name": "ComboDestructor",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "combo_destructor",
       "metadata": {
@@ -299,7 +299,7 @@
     {
       "name": "ComboDestructor2",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "combo_destructor_2",
       "metadata": {
