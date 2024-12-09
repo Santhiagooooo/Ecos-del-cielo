@@ -16,11 +16,14 @@ public class OjoDeLaPenumbraAlEstarEnLaManoProcedure {
 		if (!world.isClientSide() && world.getServer() != null)
 			world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("Iniciando"), false);
 		entity.getPersistentData().putDouble("Espera", (entity.getPersistentData().getDouble("Espera") + 1));
-		if (entity.getPersistentData().getDouble("Espera") >= 100) {
+		if (entity.getPersistentData().getDouble("Espera") >= 1400) {
 			if (!world.isClientSide() && world.getServer() != null)
 				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("Iniciando x2"), false);
 			entity.getPersistentData().putDouble("Cooldown", (entity.getPersistentData().getDouble("Cooldown") + 1));
-			if (!(entity.getPersistentData().getDouble("Cooldown") >= 100)) {
+			if (entity.getPersistentData().getDouble("Cooldown") >= 100) {
+				DefensaRunicaTerminarProcedure.execute(world, entity);
+				entity.getPersistentData().putDouble("Cooldown", 0);
+			} else {
 				{
 					boolean _setval = true;
 					entity.getCapability(EcosDelCieloModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -32,8 +35,6 @@ public class OjoDeLaPenumbraAlEstarEnLaManoProcedure {
 					_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 5, 1, true, false));
 				if (!world.isClientSide() && world.getServer() != null)
 					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("Estas en Defensa Runica"), false);
-			} else {
-				DefensaRunicaTerminarProcedure.execute(world, entity);
 			}
 		}
 	}
