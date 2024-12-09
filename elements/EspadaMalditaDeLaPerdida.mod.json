@@ -1,0 +1,39 @@
+{
+  "_fv": 69,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "espada_maldita_de_la_perdida",
+    "customModelName": "espada_maldita_de_la_perdida:default",
+    "blockingModelName": "Normal blocking",
+    "name": "Espada Maldita De La Perdida",
+    "specialInformation": {
+      "fixedValue": [
+        "Efecto especial:    ",
+        " •    Drenado de vida: Recupera 20% del daño infligido al enemigo.",
+        "   •    Maldición de desgaste: Si no se usa para atacar durante 30 segundos, el jugador pierde 1 punto de salud cada 10 segundos hasta que ataque de nuevo."
+      ]
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:EcosDelCielo"
+      }
+    ],
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 22,
+    "damageVsEntity": 10.0,
+    "usageCount": 1561,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

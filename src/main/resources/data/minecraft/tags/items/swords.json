@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "ecos_del_cielo:cuchilla_del_heraldo_oscuro",
+    "ecos_del_cielo:espada_maldita_de_la_perdida",
     "ecos_del_cielo:guadana_pajaro"
   ]
 }

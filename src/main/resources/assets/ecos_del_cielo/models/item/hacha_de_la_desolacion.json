@@ -1,0 +1,7 @@
+{
+  "parent": "ecos_del_cielo:custom/hacha_de_la_desolacion",
+  "textures": {
+    "1": "ecos_del_cielo:block/hacha",
+    "particle": "ecos_del_cielo:item/hacha_de_la_desolacion"
+  }
+}

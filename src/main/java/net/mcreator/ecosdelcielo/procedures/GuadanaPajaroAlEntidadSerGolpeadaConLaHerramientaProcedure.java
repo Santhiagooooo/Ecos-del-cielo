@@ -1,6 +1,9 @@
 package net.mcreator.ecosdelcielo.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
 
 public class GuadanaPajaroAlEntidadSerGolpeadaConLaHerramientaProcedure {
 	public static void execute(Entity entity) {
@@ -9,6 +12,6 @@ public class GuadanaPajaroAlEntidadSerGolpeadaConLaHerramientaProcedure {
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 30, 1));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 40, 2));
+			_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 120, 2));
 	}
 }

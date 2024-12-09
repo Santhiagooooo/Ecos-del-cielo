@@ -1,0 +1,7 @@
+{
+  "parent": "ecos_del_cielo:custom/espada_maldita_de_la_perdida",
+  "textures": {
+    "1": "ecos_del_cielo:block/espadamaldita",
+    "particle": "ecos_del_cielo:item/espada_maldita_de_la_perdida"
+  }
+}
