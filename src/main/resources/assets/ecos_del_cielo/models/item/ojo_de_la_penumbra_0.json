@@ -1,7 +1,7 @@
 {
   "parent": "ecos_del_cielo:custom/ojo_de_la_penumbra",
   "textures": {
-    "1": "ecos_del_cielo:block/ojo_de_la_penumbra",
+    "0": "ecos_del_cielo:block/ojo_de_la_penumbra",
     "particle": "ecos_del_cielo:item/ojo_de_la_penumbra_final_2"
   }
 }
