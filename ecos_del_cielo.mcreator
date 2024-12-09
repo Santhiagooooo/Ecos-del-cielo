@@ -355,7 +355,7 @@
           "src/main/java/net/mcreator/ecosdelcielo/item/EspadaMalditaDeLaPerdidaItem.java"
         ]
       },
-      "path": "~/Espada Maldita de la Perdida"
+      "path": "~/EspadaMalditaDeLaPerdida"
     }
   ],
   "variable_elements": [
@@ -430,7 +430,7 @@
         "children": []
       },
       {
-        "name": "EspadaMalditaDeLaPerdida",
+        "name": "Arco de los Condenados",
         "children": []
       },
       {
@@ -442,7 +442,7 @@
         "children": []
       },
       {
-        "name": "Espada Maldita de la Perdida",
+        "name": "EspadaMalditaDeLaPerdida",
         "children": []
       }
     ]
