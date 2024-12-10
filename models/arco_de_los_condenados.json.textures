@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "arco_de_los_condenados_x"
+      },
+      "name": "default"
+    }
+  }
+}

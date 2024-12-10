@@ -1,0 +1,7 @@
+{
+  "parent": "ecos_del_cielo:custom/arco_de_los_condenados",
+  "textures": {
+    "1": "ecos_del_cielo:block/arco_de_los_condenados_x",
+    "particle": "ecos_del_cielo:item/arco_de_los_condenados_z"
+  }
+}

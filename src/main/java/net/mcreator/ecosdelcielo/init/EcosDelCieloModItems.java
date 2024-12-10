@@ -22,6 +22,7 @@ import net.mcreator.ecosdelcielo.item.HachaDeLaDesolacionItem;
 import net.mcreator.ecosdelcielo.item.GuadanaPajaroItem;
 import net.mcreator.ecosdelcielo.item.EspadaMalditaDeLaPerdidaItem;
 import net.mcreator.ecosdelcielo.item.CuchillaDelHeraldoOscuroItem;
+import net.mcreator.ecosdelcielo.item.ArcoDeLosCondenadosItem;
 import net.mcreator.ecosdelcielo.EcosDelCieloMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -32,6 +33,7 @@ public class EcosDelCieloModItems {
 	public static final RegistryObject<Item> OJO_DE_LA_PENUMBRA = REGISTRY.register("ojo_de_la_penumbra", () -> new OjoDeLaPenumbraItem());
 	public static final RegistryObject<Item> ESPADA_MALDITA_DE_LA_PERDIDA = REGISTRY.register("espada_maldita_de_la_perdida", () -> new EspadaMalditaDeLaPerdidaItem());
 	public static final RegistryObject<Item> CUCHILLA_DEL_HERALDO_OSCURO = REGISTRY.register("cuchilla_del_heraldo_oscuro", () -> new CuchillaDelHeraldoOscuroItem());
+	public static final RegistryObject<Item> ARCO_DE_LOS_CONDENADOS = REGISTRY.register("arco_de_los_condenados", () -> new ArcoDeLosCondenadosItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

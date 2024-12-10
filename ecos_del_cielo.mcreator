@@ -341,6 +341,20 @@
         ]
       },
       "path": "~/OjoDeLaPenumbra"
+    },
+    {
+      "name": "ArcoDeLosCondenados",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arco_de_los_condenados",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ecos_del_cielo/models/item/arco_de_los_condenados.json",
+          "src/main/java/net/mcreator/ecosdelcielo/item/ArcoDeLosCondenadosItem.java"
+        ]
+      },
+      "path": "~/Arco de los Condenados"
     }
   ],
   "variable_elements": [
@@ -394,6 +408,7 @@
       "item_group.ecos_del_cielo.ecos_del_cielo": "Ecos Del Cielo",
       "item.ecos_del_cielo.hacha_de_la_desolacion": "Hacha De La Desolacion",
       "item.ecos_del_cielo.cuchilla_del_heraldo_oscuro": "Cuchilla Del Heraldo Oscuro",
+      "item.ecos_del_cielo.arco_de_los_condenados": "Arco De Los Condenados",
       "item.ecos_del_cielo.ojo_de_la_penumbra": "Ojo De La Penumbra"
     }
   },

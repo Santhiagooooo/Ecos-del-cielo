@@ -23,6 +23,7 @@ public class EcosDelCieloModTabs {
 				tabData.accept(EcosDelCieloModItems.OJO_DE_LA_PENUMBRA.get());
 				tabData.accept(EcosDelCieloModItems.ESPADA_MALDITA_DE_LA_PERDIDA.get());
 				tabData.accept(EcosDelCieloModItems.CUCHILLA_DEL_HERALDO_OSCURO.get());
+				tabData.accept(EcosDelCieloModItems.ARCO_DE_LOS_CONDENADOS.get());
 			})
 
 					.build());
